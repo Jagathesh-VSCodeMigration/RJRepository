@@ -77,67 +77,7 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-		embedded_svc.settings.extraPrechatInfo = [
-            {
-                "entityFieldMaps": [
-                    {
-                        "doCreate": false,
-                        "doFind": true,
-                        "fieldName": "LastName",
-                        "isExactMatch": true,
-                        "label": "Last Name"
-                    },
-                    {
-                        "doCreate": false,
-                        "doFind": true,
-                        "fieldName": "FirstName",
-                        "isExactMatch": true,
-                        "label": "First Name"
-                    }
-                ],
-                "entityName": "Contact",
-                "saveToTranscript":"Contact",
-                "showOnCreate":false
-            },
-            {
-                "entityFieldMaps": [
-                    {
-                        "doCreate": true,
-                        "doFind": false,
-                        "fieldName": "CORE_Hidden_Country__c",
-                        "isExactMatch": false,
-                        "label": "  "
-                    },
-                    {
-                        "doCreate": true,
-                        "doFind": false,
-                        "fieldName": "CORE_Chat_First_Name__c",
-                        "isExactMatch": false,
-                        "label": "First Name"
-                    },
-                    {
-                        "doCreate": true,
-                        "doFind": false,
-                        "fieldName": "SuppliedEmail",
-                        "isExactMatch": false,
-                        "label": "Email"
-                    },
-                    {
-                        "doCreate": true,
-                        "doFind": false,
-                        "fieldName": "CORE_Chat_Name__c",
-                        "isExactMatch": false,
-                        "label": "Last Name"
-                    }
-                ],
-                "entityName": "Case",
-                "saveToTranscript": "CaseId",
-                "showOnCreate": true
-            }
-        ];
-        embedded_svc.settings.prepopulatedPrechatFields = {
-            "CORE_Hidden_Country__c":"AT"
-        };
+		
 
 		embedded_svc.init(
 			'https://int-crm--tst9.my.salesforce.com',
